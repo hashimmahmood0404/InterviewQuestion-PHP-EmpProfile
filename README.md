@@ -1,46 +1,82 @@
-# PHP coding test
+# Employee Management System
 
-Simple php test to create and display employee profile
+A simple Employee Management System built with a React frontend and PHP backend.
 
-## Follow these steps
-1. Fork this repository into your GitHub account (You can create a GitHub account if you don't have one)
-2. Clone the repository from your repository
-3. Checkout main branch
-4. Commit your changes with the code for below question
-5. Upload screen interface as image
-6. Add ```MYwavePSSD``` as collaborators
+The application allows users to:
 
-## Task
-1. Create a form to add new employee
+- Add new employees
+- View all employees
+- Search employees
+- Validate employee information before submission
 
-    ```
-    Employee Name
-    Gender
-    Martial Status
-    Phone No.
-    Email
-    Address
-    Date of birth
-    Nationality
-    Hire Date
-    Department
-    ```
-    - You can add any other field that is relevant.
-    - Add validation to the input for both frontend and backend
-    - Implement REST API to pass data
-    - After validation, if form is valid, save into json or csv
+---
 
-2. Show all employee profile pulled from json or csv in a new screen
+## Tech Stack
 
-## Language
-- Frontend
-    - Normal HTML5 and css or REACT 
+### Frontend
 
-- Backend
-    - Normal PHP or LARAVEL
+- React
+- JavaScript / TypeScript
+- Vite
+- CSS
+- HTML
 
-## BONUS POINT
+### Backend
 
-- Clean code and good practise
-- Good UI UX
+- PHP
+- REST API
+- MySQL
+
+---
+
+## Project Structure
+
+```text
+EmployeeManagementSystem/
+│
+├── backend/
+│   ├── api/
+│   │   └── employeeAPI.php
+│   ├── service/
+│   │   └── employeeService.php
+│   │   └── employeeValidator.php
+│   └── data
+│       └── employees.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── EmployeeForm.jsx
+│   │   │   └── EmployeeList.jsx
+│   │   │
+│   │   ├── service/
+│   │   │   └── employeeApi.js
+│   │   │   └── employeeValidation.js
+│   │   │
+│   │   ├── App.jsx
+│   │   └── ...
+│   │
+│   ├── package.json
+│   └── ...
+│
+└── README.md
+
+
+--
+
+
+## How to run the project
+
+    ## Backend
+    To run the PHP server at the backend, run the following command
+    1. cd backedn
+    2. php -S localhost:8000
+
+    ## Frontend
+    To run the react fronend, run the following command
+    1. cd frontend
+    2. npm install
+    3. npm run dev
+
+    ## In browser open http://localhost:5173/
 
